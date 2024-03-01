@@ -85,7 +85,7 @@ const createPlace = async (req, res, next) => {
     return next(error);
   }
 
-  // New place
+  // Create a new place
   const createdPlace = new Place({
     title,
     description,
