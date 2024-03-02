@@ -1,0 +1,8 @@
+{
+  "env": {
+    "DB_USER": "geo",
+    "DB_PASSWORD": "geo",
+    "DB_NAME": "geo",
+    "JWT_KEY": "supersecret_dont_share"
+  }
+}

@@ -66,7 +66,7 @@ server.use((error, req, res, next) => {
 // Establish the connection to the database. If successful than start the back end server.
 mongoose
   .connect(
-    "mongodb+srv://geo:geo@cluster0.3cmdq6d.mongodb.net/geo?retryWrites=true&w=majority"
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.3cmdq6d.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
   )
   .then(() => {
     server.listen(5000);
